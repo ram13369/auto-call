@@ -28,7 +28,7 @@ const closeRound = async () => {
 
 async function check() {
   try {
-    const callresult = await contract.startTime();
+    const callresult = await contract.currRoundStartTime();
     return callresult;
   } catch (error) {
     console.error("Error in check >", error);
